@@ -31,7 +31,7 @@ pipeline {
 
         stage('Package') {
             steps {
-                sh 'sudo docker build -t simple-python-app:latest .'
+                sh 'docker build -t simple-python-app:latest .'
             }
         }
     }
